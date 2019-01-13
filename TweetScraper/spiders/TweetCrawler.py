@@ -7,10 +7,7 @@ import re
 import json
 import time
 import logging
-try:
-    from urllib import quote  # Python 2.X
-except ImportError:
-    from urllib.parse import quote  # Python 3+
+from urllib.parse import quote  # Python 3+
 
 from datetime import datetime
 
